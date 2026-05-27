@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+      <style>
+*{
+    padding: 0 ;
+    box-sizing: 10px;
+
+}
+    .banner{
+            display: flex;
+            background-color: rgba(0, 46, 114, 0.897);
+            width: 1440px;
+            flex-direction: center;
+            padding: 100px;
+            border-radius: 30px;
+            color: aliceblue;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .content-section{
+        flex: 1;
+        background-color: bisque;
+    }
+    @media (max-width: 800px){
+        .content-section{
+            flex-direction: column;
+        }
+        
+    }
+
+
+            
+            
+</style>
+</head>
+
+
+<body>
+    <ul>
+    <a href="#">Home</a>
+    <a href="#">Sobre nós</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+    </ul>
+    <div class="banner">
+        <h1 class="banner-texto">Meu Banner de 1400px</h1>
+    </div>
+
+    <section class="content-section">
+        <h2>Artigo 1 </h2>
+        <p>Este é o primiro artigo. Ele está dividindo o espaço em linha igualmente com o artigo do lado usando a propriedade <strong>flex: 1</strong>. Quando a tela ficar menor que 800p, eles ão empilhar. </p>
+        <article>
+            <h2>Artigo 2</h2>
+            <p>
+                Este é o segundo artigo. O Flexbox no container pai (section) garante que ambos os artigos tenham a mesma altura, independente do tamanho do conteudo dentro deles.</p>
+
+        </article>
+ </section>
+
+   
+</body>
+</html>
